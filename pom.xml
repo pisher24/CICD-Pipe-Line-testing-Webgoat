@@ -158,9 +158,8 @@
         <version>9.1</version>
       </dependency>
         <dependency>
-             <groupId>com.fortify.sca.plugins.maven</groupId>
+         <groupId>com.fortify.sca.plugins.maven</groupId>
 	   <artifactId>sca-maven-plugin-master</artifactId>
-	     <packaging>pom</packaging>
 	      <version>22.1.0</version>
 	    <name>Fortify SCA Maven Plugin: project master</name>
 	    <organization>
