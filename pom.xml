@@ -12,18 +12,7 @@
   <artifactId>webgoat</artifactId>
   <version>2023.3</version>
   <packaging>jar</packaging>
-    groupId>com.fortify.sca.plugins.maven</groupId>
-	<artifactId>sca-maven-plugin-master</artifactId>
-	<packaging>pom</packaging>
-	<version>22.1.0</version>
-	<name>Fortify SCA Maven Plugin: project master</name>
-	<organization>
-		<url>https://software.microfocus.com/software/enterprise-security</url>
-		<name>Fortify</name>
-	</organization>
-	<prerequisites>
-		<maven>3.5.4</maven>
-	</prerequisites>
+   
 
   <name>WebGoat</name>
   <description>WebGoat, a deliberately insecure Web Application</description>
@@ -168,6 +157,20 @@
         <artifactId>asm</artifactId>
         <version>9.1</version>
       </dependency>
+        <dependency>
+             <groupId>com.fortify.sca.plugins.maven</groupId>
+	   <artifactId>sca-maven-plugin-master</artifactId>
+	     <packaging>pom</packaging>
+	      <version>22.1.0</version>
+	    <name>Fortify SCA Maven Plugin: project master</name>
+	    <organization>
+		<url>https://software.microfocus.com/software/enterprise-security</url>
+		<name>Fortify</name>
+	      </organization>
+	     <prerequisites>
+		<maven>3.5.4</maven>
+	     </prerequisites>
+        </dependency>
 
       <dependency>
         <groupId>org.apache.commons</groupId>
