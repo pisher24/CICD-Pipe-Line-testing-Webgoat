@@ -721,6 +721,29 @@
         </plugins>
       </build>
     </profile>
+		<profile>
+			<id>fortify-sca</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.fortify.sca.plugins.maven</groupId>
+						<artifactId>sca-maven-plugin</artifactId>
+						<version>22.2.0</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>clean</goal>
+									<goal>translate</goal>
+									<goal>scan</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
   </profiles>
-
 </project>
